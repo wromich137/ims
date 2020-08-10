@@ -1,0 +1,33 @@
+header {
+    
+    letter-spacing: 1px;
+    height: 10em;
+    background: #2c3e50;
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.top-menu {
+    height: 3em;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 30%
+}
+
+.top-menu-selecter {
+    display: inline-block;
+}
+
+.main {
+    display: inline-block;
+}
+
+.side-menu {
+    visibility: hidden;
+    float: right;
+    border: 1px solid;
+    height: 500px;
+}

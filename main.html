@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интерактивная система МЧС</title>
+        <meta name="description" content="карта МЧС">
+        <link rel="stylesheet" href="./style/main.css">
+        <script src="./js/js.js" type="text/javascript"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=621be811-2d42-457e-a014-904ec9f03a02&lang=ru_RU" type="text/javascript"></script>
+        <script src="./js/data.js" type="text/javascript"></script>
+        
+        
+        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            
+            <header>
+                
+                <h1>Интерактивная информационная система моделирования последствий чрезвычайных ситуаций</h1>
+                
+                <div class="top-menu">
+                    
+                    <p class="top-menu-selecter"><select id="selecter">
+                        <option hidden>Выберите событие</option>
+                        <option value="Радиация">Радиация</option>
+                        <option value="Наводнение">Наводнение</option>
+                        <option value="Землетрясение">Землетрясение</option>
+                        <option value="Пожар">Пожар</option>
+                    </select></p>
+                    
+                    <p class="top-menu-selecter"><select id="action">
+                        <option hidden>Выберите действие</option>
+                        <option>Отобразить границу России</option>
+                        <option>Отобразить арктическую зону</option>
+                    </select></p>
+                </div>
+                
+            </header>
+            
+            <div class="main-info">
+                
+                <div class="main" id="map" style="width: 1000px; height: 500px"></div>
+                
+                <div class="main side-menu">
+                    <h1>Сводка о регионе</h1>
+                    <p>ГУ МЧС</p>
+                    <p>Численность личного состава</p>
+                    <p>Численность техники</p>
+                </div>
+                  
+            </div>  
+            
+            
+            
+        </div>
+        
+        <script src="./js/script1.js" type="text/javascript"></script>
+      
+    </body>
+</html>
